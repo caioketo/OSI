@@ -1,0 +1,55 @@
+﻿@model OSI.Models.Users
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Usuarios</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">Username</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Username)
+    </div>
+
+    <div class="display-label">Password</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Password)
+    </div>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">Prestige</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Prestige)
+    </div>
+
+    <div class="display-label">ModificationDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ModificationDate)
+    </div>
+
+    <div class="display-label">InsertedDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.InsertedDate)
+    </div>
+
+    <div class="display-label">DeletedDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeletedDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
